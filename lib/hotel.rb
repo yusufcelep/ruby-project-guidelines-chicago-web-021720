@@ -23,3 +23,48 @@
 class Hotel < ActiveRecord::Base
 
 end
+
+
+
+#what we have to play around with in this database:
+# web_url
+# phone
+# zip
+# gis_id (sounds like a foreign key for mapping with some other table)
+# address
+# numrooms
+# name
+# latitude/longitude
+# addrid (another foreign key)
+
+
+#okay'd generating random data to supplement this table with duke so we can create a more complex program
+
+
+# boolean = [true, false]
+# pool = pool.sample
+
+
+#hotel cost = rand(900)
+
+# breakfast = boolean.sample
+
+# breakfast = boolean.sample
+  #if true
+  #breakfast_good? = boolean.sample
+  #else breakfast_good = false
+
+# gym = boolean.sample 
+
+# def bedbugs 
+  #has_bugs = boolean.sample
+      #if true value = rand(100000000000000)
+      #if false value = 0 
+      #puts this hotel has an average of #{value} bedbugs in each room.
+
+
+#rating = a float between 1 and 5. Obvs this is going to utilize .rand but I'm really bad at that.
+
+
+#do we need reviews?
+

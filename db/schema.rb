@@ -10,15 +10,38 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200303170556) do
+ActiveRecord::Schema.define(version: 20200304172014) do
+
+  create_table "hotels", force: :cascade do |t|
+    t.string  "website"
+    t.string  "phone"
+    t.integer "zip"
+    t.string  "address"
+    t.integer "num_rooms"
+    t.string  "name"
+  end
+
+  create_table "rsvps", force: :cascade do |t|
+    t.string  "user_id"
+    t.string  "hotel_id"
+    t.string  "start_date"
+    t.string  "departure_date"
+    t.integer "budget"
+    t.integer "num_rooms"
+    t.boolean "breakfast"
+    t.boolean "pool"
+    t.boolean "gym"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "name"
     t.datetime "start_date"
+    t.datetime "departure_date"
     t.integer  "budget"
-    t.integer  "peeps"
+    t.integer  "num_rooms"
+    t.boolean  "breakfast"
+    t.boolean  "pool"
+    t.boolean  "gym"
   end
-
-  cret
 
 end
