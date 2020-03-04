@@ -31,7 +31,7 @@
 #             RSVP.new(self, budget, num_people, hotel)
 #             puts "Thank you for booking with #{hotel}! We look forward to your visit!"
 #         else
-#             raise "PLease select a valid hotel from the available hotels list."
+#             raise "Please select a valid hotel from the available hotels list."
 #     end
 # end
 
