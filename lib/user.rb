@@ -50,5 +50,16 @@
 # end
 
 class User < ActiveRecord::Base
-
+    def self.return_hotels
+        Rsvp.where(Rsvp.user_id = self.id)
+    end
 end
+
+# t.string :name
+# t.datetime :start_date
+# t.datetime :departure_date
+# t.integer :budget
+# t.integer :num_rooms
+# t.boolean :breakfast
+# t.boolean :pool
+# t.boolean :gym

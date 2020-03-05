@@ -21,8 +21,19 @@
 #   +----------------------------------------[  C o d e  B e l o w  ]----------------------------------------+
 
 class Hotel < ActiveRecord::Base
+  
 
 end
+
+
+# t.string :website
+# t.string :phone
+# t.string :zip
+# t.string :address
+# t.integer :num_rooms
+# t.string :name
+
+
 
 
 
